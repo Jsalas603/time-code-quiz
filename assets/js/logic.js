@@ -25,6 +25,19 @@ function startQuiz() {
 
 function endQuiz() {
     clearInterval(timerInterval);
+    var initials = prompt("What's your initials?");
+    var highscore = timerEl.textContent
+    console.log(highscore)
+    if( initials !== "") {
+        var scores =JSON.parse(localStorage.getItem("highscores")) || [];
+        var userScore = {
+            initials,
+            highscore
+        }
+        scores.push(userScore)
+        localStorage.setItem("highscores",JSON.stringify(scores))
+        window.location.href = "scores.html"
+    }
 }
 
 function showQuestion() {

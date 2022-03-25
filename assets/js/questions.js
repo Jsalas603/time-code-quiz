@@ -1,12 +1,22 @@
 var questions = [
     {
-        title: "Booleans express to:",
-        choices: ['true/false', 'yes/no', 'confirm/deny', 'aye/nay'],
-        answer: 'true/false',
+        title: 'Who one-shooted Raditz when he was holding Goku in the their first encounter?',
+        choices: ['Piccolo', 'Gokue', 'Broly', 'Ant-Man'],
+        answer: 'Piccolo',
     },
     {
-        title: "Which one of the following are valid string methods?",
-        choices: ['.length', '.includes()', '.is', '.map()'],
-        answer: '.includes()',
+        title: "Who is the main villan in the Marvel movies: The Avengers",
+        choices: ['Thanos', 'Spider-Man', 'Hulk', 'Ant-Man'],
+        answer: 'Thanos',
     },
+    {
+        title: "Who was the first person to go super saiyan blue?",
+        choices: ['Vegeta', 'Goku', 'Bulma', 'Ant-Man'],
+        answer: 'Goku',
+    },
+    {
+        title: 'What is the special bean that resotore 100% of your energy',
+        choices: ['Senzu bean', 'loan star chilli', 'Blue Beans', 'Ant-Man'],
+        answer: 'Senzu bean',
+    }
 ];
