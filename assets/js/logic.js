@@ -36,7 +36,7 @@ function endQuiz() {
         }
         scores.push(userScore)
         localStorage.setItem("highscores",JSON.stringify(scores))
-        window.location.href = "index.html"
+        window.location.href = "scores.html"
     }
 }
 
