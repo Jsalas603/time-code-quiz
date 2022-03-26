@@ -1,7 +1,7 @@
 var questions = [
     {
         title: 'Who one-shooted Raditz when he was holding Goku in the their first encounter?',
-        choices: ['Piccolo', 'Gokue', 'Broly', 'Ant-Man'],
+        choices: ['Piccolo', 'Goku', 'Broly', 'Ant-Man'],
         answer: 'Piccolo',
     },
     {

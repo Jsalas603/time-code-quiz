@@ -36,7 +36,7 @@ function endQuiz() {
         }
         scores.push(userScore)
         localStorage.setItem("highscores",JSON.stringify(scores))
-        window.location.href = "scores.html"
+        window.location.href = "index.html"
     }
 }
 
@@ -59,17 +59,21 @@ function showQuestion() {
     qDiv.append(questionDiv);
 }
 
-function checkAnswer(event) {
-    var answer = event.target.getAttribute("data-answer");
-    var choice = event.target.textContent;
-    if (choice === answer) {
-        console.log("You got it right!")
-    } else {
-        time -= 10;
-        console.log("WRONGGG")
+function checkAnswer() {
+    if (this.value !== questions[gameIndex].answer) {
+        time -= 10
+        if (time < 0 ) {
+            time = 0
+        }
+        timerEl.textContent = time
     }
+
     gameIndex++;
-    showQuestion();
+    if (gameIndex === questions.length) {
+        endQuiz()
+    } else {
+        showQuestion()
+    }
 }
 
 startBtn.onclick = startQuiz;
